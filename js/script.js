@@ -22,7 +22,7 @@ function formValidation() {
     var divDoBError = document.querySelector("#divDoBError");
 
     if (DoB.value == "") {
-        divDoBError.classList.remove(invisible);
+        divDoBError.classList.remove("invisible");
         divDoBError.innerHTML = "The Date of Birth cannot be empty."
         DoB.classList.add("hasError");
         alert(DoB.value + " is empty string");
@@ -33,7 +33,7 @@ function formValidation() {
         var DoBDate = new Date(DoB.value);
         var todayDate = new Date();
         if(DoBDate >= todayDate) {
-            divDoBError.classList.remove(invisible);
+            divDoBError.classList.remove("invisible");
             divDoBError.innerHTML = "The Date of Birth must be before today's date."
             DoB.classList.add("hasError");
             alert(DoB.value + " is passed today's date");
@@ -41,7 +41,7 @@ function formValidation() {
         }
 
         else {
-            divDoBError.classList.add(invisible);
+            divDoBError.classList.add("invisible");
             divDoBError.innerHTML = ""
             DoB.classList.remove("hasError");
         }
