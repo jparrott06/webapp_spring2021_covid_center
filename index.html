@@ -15,9 +15,10 @@
         <article>
             <form>
                 <fieldset class="border">
-                    <legend class="w-auto">Part 1: Patient Information</legend>
+                    <div class="alert-primary">
+                        <legend class="w-auto">Part 1: Patient Information</legend>
+                    </div>
 
-                
                     <div class="form-group row">
                         <div class="col-lg-2">
                             <label for="txtFirstname" class="col-form-label">
@@ -28,7 +29,7 @@
                             <input type="text" id="txtFirstname" name="txtFirstname" required class="form-control"
                                 placeholder="ex. John">
                         </div>
-                
+
                         <div class="col-lg-2">
                             <label for="txtLastname" class="col-form-label">
                                 <span>Last name: </span>
@@ -66,21 +67,22 @@
                         </div>
                     </fieldset>
 
+                    <div class="form-group row">
 
-                    <div class="row form-group">
-                        <label for="txtTel" class="col-sm-2 col-form-label">Telephone:</label>
-                        <div class="col-sm-10">
+                        <label for="txtTel" class="col-sm-2 col-lg-2 col-form-label">Telephone:</label>
+                        <div class="col-sm-10 col-lg-4">
                             <input type="tel" id="txtTel" name="txtTel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                 placeholder="ex. 555-555-5555" class="form-control">
                         </div>
-                    </div>
 
-                    <div class="row form-group">
-                        <label for="txtEmail" class="col-sm-2 col-form-label">Email:</label>
-                        <div class="col-sm-10">
+
+
+                        <label for="txtEmail" class="col-sm-2 col-lg-2 col-form-label">Email:</label>
+                        <div class="col-sm-10 col-lg-4">
                             <input type="email" id="txtEmail" name="txtEmail" placeholder="ex. johndoe@yahoo.com"
                                 required class="form-control">
                         </div>
+
                     </div>
 
                     <div class="row form-group">
@@ -268,7 +270,9 @@
                 </fieldset>
 
                 <fieldset class="border">
-                    <legend>Part 3: Other questions</legend>
+                    <div class="alert-primary">
+                        <legend>Part 3: Other questions</legend>
+                    </div>
                     <div class="row form-group">
                         <label for="ddContact" class="col-sm-2 col-form-label">
                             Have you had contact (within 6 feet for > 15 minutes), or caring for someone who is
