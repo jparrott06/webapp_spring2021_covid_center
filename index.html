@@ -54,17 +54,20 @@
                             <div class="col-sm-10">
                                 <div class="form-check">
                                     <input type="radio" id="rbMale" name="gender" value="male" class="form-check-input">
+                                    <div id="divrbMaleError" class="errorMessage invisible"></div>
                                     <label for="rbMale" class="form-check-label">Male</label>
                                 </div>
 
                                 <div class="form-check">
                                     <input type="radio" id="rbFemale" name="gender" value="female"
                                         class="form-check-input">
+                                    <div id="divrbFemaleError" class="errorMessage invisible"></div>
                                     <label for="rbFemale" class="form-check-label">Female</label>
                                 </div>
                                 <div class="form-check">
                                     <input type="radio" id="rbOther" name="gender" value="other"
                                         class="form-check-input">
+                                        <div id="divrbOtherError" class="errorMessage invisible"></div>
                                     <label for="rbOther" class="form-check-label">Other</label>
                                 </div>
 
@@ -78,6 +81,7 @@
                         <div class="col-sm-10 col-lg-4">
                             <input type="tel" id="txtTel" name="txtTel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                 placeholder="ex. 555-555-5555" class="form-control">
+                            <div id="divtxtTelError" class="errorMessage invisible"></div>
                         </div>
 
 
@@ -114,6 +118,7 @@
                         <div class="col">
                             <input type="text" id="txtZipcode" name="txtZipcode" class="form-control"
                                 placeholder="(Zipcode) ex. 80218" pattern="[0-9]{5}">
+                            <div id="divtxtZipcodeError" class="errorMessage invisible"></div>
                         </div>
 
                     </div>
@@ -126,6 +131,7 @@
                         <div class=col-sm-10>
                             <input type="date" id="txtDoB" name="txtDoB" required class="form-control"
                                 placeholder="mm/dd/yyyy">
+                            <div id="divtxtDoBError" class="col-sm-5 invisible errorMessage"></div>
                             <div id="divDoBError" class="col-sm-5 invisible errorMessage"></div>
                         </div>
 
@@ -340,6 +346,7 @@
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <input type="text" id="txtCountry" name="txtCountry" required
                                 placeholder="ex. USA,Japan,Mexico" class="form-control">
+                            <div id="divCountryError" class="col-sm-5 invisible errorMessage"></div>
                             <div id="divtxtCountryError" class="col-sm-5 invisible errorMessage"></div>
                         </div>
 
@@ -366,6 +373,7 @@
                         <div>
                             <input type="text" id="txtTemp" name="txtTemp" required pattern=[0-9]{2,3}\.[0-9]{1,2}
                                 placeholder="ex. 98.1" class="form-control">
+                            <div id="divtxtTempError" class="errorMessage invisible"></div>
                         </div>
                     </div>
 
